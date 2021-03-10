@@ -1,4 +1,4 @@
-# DeepMetaHandles
+# DeepMetaHandles (CVPR2021 Oral)
 
 <img src="demo/teaser.jpg" align="center"> 
 <div float="center">
