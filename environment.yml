@@ -1,4 +1,4 @@
-name: meta-handle1
+name: DeepMetaHandles
 channels:
   - pytorch3d
   - pytorch
