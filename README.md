@@ -56,7 +56,7 @@ Note: For different categories, you may need to adjust the number of meta-handle
 5. Run `data_preprocessing/calc_weight_bin` to calculate the bihrnomic weights. It takes `xxx.mesh`, `xxx.mesh__sf.obj`, and the control point file as input, and will output a text file containing the weight matrix for the vertices in `xxx.mesh__sf.obj`.
 6. Run `data_preprocessing/sample_surface_points_bin` to sample points on the `xxx.mesh__sf.obj` and calculate the corresponding biharmonic weights for the sampled point cloud.
 7. In our training, we remove those shapes (about 10%) whose biharmonic weight matrix contains elements that are smaller than -1.5 or greater than 1.5. We find that this can help us to converge faster.
-8. To reduce IO time during training, you may compress the data into a compact form and load them to the memory.
+8. To reduce IO time during training, you may compress the data into a compact form and load them to the memory. For example, you can use python scripts in `data_preprocessing/merge_data` to convert cpp output into numpy files.
 
 
 ## Citation
